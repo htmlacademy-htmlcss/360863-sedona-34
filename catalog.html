@@ -89,10 +89,9 @@
             </fieldset>
             <fieldset class="filter-fieldset">
                 <legend class="filter-fieldset-title">Стоимость, ₽:</legend>
-                <label for="minprice">от</label><input id="minprice" type="number" min="0" max="9000" value="0" name="min-price"> <!--не понял как сделать одну полоску с двумя бегунками -->
+                <label for="minprice">от</label><input id="minprice" type="number" min="0" max="9000" value="0" name="min-price">
                 <label for="maxprice">от</label><input id="maxprice" type="number" min="0" max="9000" value="7000" name="max-price">
-                <label for="minrange" class="visually-hidden">от</label><input type="range" id="minrange" min="0" max="9000" step="100" oninput="minprice.value = minrange.value" value="0"> <!--нашел такой вариант в интернете, но с именованием какие-то сложности как будто. в одном слово oninput обязательно должно быть?-->
-                <label for="maxrange" class="visually-hidden">от</label><input type="range" id="maxrange" min="0" max="9000" step="100" oninput="maxprice.value = maxrange.value" value="7000">
+                <label for="price-range" class="visually-hidden">от</label><input type="range" id="price-range" min="0" max="9000" step="100" value="7000">
             </fieldset>
             <button type="submit" class="filter-button-submit">Применить</button>
             <button class="filter-button-refresh">Сбросить</button>
@@ -109,31 +108,39 @@
             </select>
             <button type="submit" id="hotel-sort-button" class="visually-hidden">Сортировать</button>
         </form>
-        <ul class="hotel-view-list"> <!--этот блок не понял как сверстать-->
-            <li class="hotel-view-item">
-                <button class="hotel-view-button">
-                    <span class="visually-hidden">Вид карточек 1</span>
-                </button>
-            </li>
-            <li class="hotel-view-item">
-                <button class="hotel-view-button">
-                    <span class="visually-hidden">Вид карточек 2</span>
-                </button>
-            </li>
-            <li class="hotel-view-item">
-                <button class="hotel-view-button">
-                    <span class="visually-hidden">Вид карточек 3</span>
-                </button>
-            </li>
-        </ul>
+        <form action="https://echo.htmlacademy.ru" method="get" id="form-hotel-view">
+            <fieldset class="hotel-view-fieldset">
+                <legend class="hotel-view-fieldset-title visually-hidden">Вид карточек:</legend>
+                <ul class="hotel-view-list">
+                    <li class="hotel-view-item">
+                        <input type="checkbox" id="hotel-view-1" name="hotel-view-1" checked>
+                        <label for="hotel-view-1" class="visually-hidden">Вид карточек 1</label>
+                    </li>
+                    <li class="hotel-view-item">
+                        <input type="checkbox" id="hotel-view-2" name="hotel-view-2">
+                        <label for="hotel-view-2" class="visually-hidden">Вид карточек 2</label>
+                    </li>
+                    <li class="hotel-view-item">
+                        <input type="checkbox" id="hotel-view-3" name="hotel-view-3">
+                        <label for="hotel-view-3" class="visually-hidden">Вид карточек 3</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" id="hotel-view-button" class="visually-hidden">Настроить вид</button>
+        </form>
         <ul class="hotel-list">
             <li class="hotel-item">
-                <article> <!--тот вопрос про article, правильно его тут использовать? https://qna.habr.com/q/472573-->
+                <article>
                     <h3 class="hotel-title">Amara Resort & Spa</h3>
                     <img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 4000 ₽</span>
-                    <span class="filled-star"></span><span class="filled-star"></span><span class="filled-star"></span><span class="filled-star"></span><span></span>
+                    <ul class="rating-star-list">
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                    </ul>
                     <span class="hotel-rating">Рейтинг: 8,5</span>
                     <a href="#" class="hotel-link">Подробнее</a>
                     <button class="hotel-add-favorites-button">В избранное</button>
@@ -145,7 +152,12 @@
                     <img src="img/villas-at-poco.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 5000 ₽</span>
-                    <span class="filled-star"></span><span class="filled-star"></span><span class="filled-star"></span><span class="filled-star"></span><span></span>
+                    <ul class="rating-star-list">
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                    </ul>
                     <span class="hotel-rating">Рейтинг: 9,2</span>
                     <a href="#" class="hotel-link">Подробнее</a>
                     <button class="hotel-add-favorites-button">В избранное</button>
@@ -157,7 +169,11 @@
                     <img src="img/desert-quail.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 2500 ₽</span>
-                    <span class="filled-star"></span><span class="filled-star"></span><span class="filled-star"></span><span></span><span></span>
+                    <ul class="rating-star-list">
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                    </ul>
                     <span class="hotel-rating">Рейтинг: 6,9</span>
                     <a href="#" class="hotel-link">Подробнее</a>
                     <button class="hotel-add-favorites-button">В избранное</button>
@@ -169,7 +185,10 @@
                     <img src="img/green-tree.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 1500 ₽</span>
-                    <span class="filled-star"></span><span class="filled-star"></span><span></span><span></span><span></span>
+                    <ul class="rating-star-list">
+                        <li class="rating-star"></li>
+                        <li class="rating-star"></li>
+                    </ul>
                     <span class="hotel-rating">Рейтинг: 5,0</span>
                     <a href="#" class="hotel-link">Подробнее</a>
                     <button class="hotel-add-favorites-button">В избранное</button>
@@ -208,7 +227,7 @@
 </main>
 
 <footer>
-    <section class="subscription subscription-catalog"> <!--этот блок нужно разместить в футере? он вроде как есть на всех страницах-->
+    <section class="subscription subscription-catalog">
         <h3 class="subscription-title subscription-catalog">Подпишитесь на рассылку</h3>
         <p class="subscription-description subscription-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form method="post" action="https://echo.htmlacademy.ru/" class="subscription-form subscription-catalog">
