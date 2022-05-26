@@ -9,7 +9,7 @@
 <header class="main-header">
     <nav class="navigation">
         <a href="/">
-            <img src="img/logo.png" alt="логотип" width="139" height="70" class="header-logo" >
+            <img src="images/logo.svg" alt="логотип." width="139" height="70" class="header-logo" >
         </a>
         <ul class="navigation-menu">
             <li class="navigation-menu-item navigation-menu-item-active">
@@ -91,7 +91,9 @@
                 <legend class="filter-fieldset-title">Стоимость, ₽:</legend>
                 <label for="minprice">от</label><input id="minprice" type="number" min="0" max="9000" value="0" name="min-price">
                 <label for="maxprice">от</label><input id="maxprice" type="number" min="0" max="9000" value="7000" name="max-price">
-                <label for="price-range" class="visually-hidden">от</label><input type="range" id="price-range" min="0" max="9000" step="100" value="7000">
+                <div class='roller'></div>
+                <div class='roller'></div>
+                <div class="range-strip"></div>
             </fieldset>
             <button type="submit" class="filter-button-submit">Применить</button>
             <button class="filter-button-refresh">Сбросить</button>
@@ -113,16 +115,16 @@
                 <legend class="hotel-view-fieldset-title visually-hidden">Вид карточек:</legend>
                 <ul class="hotel-view-list">
                     <li class="hotel-view-item">
-                        <input type="checkbox" id="hotel-view-1" name="hotel-view-1" checked>
-                        <label for="hotel-view-1" class="visually-hidden">Вид карточек 1</label>
+                        <input type="checkbox" id="hotel-view-list" name="hotel-view-list" checked>
+                        <label for="hotel-view-list" class="visually-hidden">Вид списком</label>
                     </li>
                     <li class="hotel-view-item">
-                        <input type="checkbox" id="hotel-view-2" name="hotel-view-2">
-                        <label for="hotel-view-2" class="visually-hidden">Вид карточек 2</label>
+                        <input type="checkbox" id="hotel-view-slideshow" name="hotel-view-slideshow">
+                        <label for="hotel-view-slideshow" class="visually-hidden">Вид слайдшоу</label>
                     </li>
                     <li class="hotel-view-item">
-                        <input type="checkbox" id="hotel-view-3" name="hotel-view-3">
-                        <label for="hotel-view-3" class="visually-hidden">Вид карточек 3</label>
+                        <input type="checkbox" id="hotel-view-table" name="hotel-view-table">
+                        <label for="hotel-view-table" class="visually-hidden">Вид таблица</label>
                     </li>
                 </ul>
             </fieldset>
@@ -132,7 +134,7 @@
             <li class="hotel-item">
                 <article>
                     <h3 class="hotel-title">Amara Resort & Spa</h3>
-                    <img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
+                    <img src="images/amara-resort.jpg" alt="Amara Resort & Spa." width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 4000 ₽</span>
                     <ul class="rating-star-list">
@@ -149,7 +151,7 @@
             <li class="hotel-item">
                 <article>
                     <h3 class="hotel-title">Villas at Poco Diablo</h3>
-                    <img src="img/villas-at-poco.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
+                    <img src="images/villas-at-poco.jpg" alt="Villas at Poco Diablo." width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 5000 ₽</span>
                     <ul class="rating-star-list">
@@ -166,7 +168,7 @@
             <li class="hotel-item">
                 <article>
                     <h3 class="hotel-title">Desert Quail Inn</h3>
-                    <img src="img/desert-quail.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
+                    <img src="images/desert-quail.jpg" alt="Desert Quail Inn." width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 2500 ₽</span>
                     <ul class="rating-star-list">
@@ -182,7 +184,7 @@
             <li class="hotel-item">
                 <article>
                     <h3 class="hotel-title">GreenTree Inn</h3>
-                    <img src="img/green-tree.jpg" alt="Amara Resort & Spa" width="300" height="211" class="hotel-image">
+                    <img src="images/green-tree.jpg" alt="GreenTree Inn." width="300" height="211" class="hotel-image">
                     <span class="hotel-category">Гостиница</span>
                     <span class="hotel-price">от 1500 ₽</span>
                     <ul class="rating-star-list">
@@ -232,7 +234,7 @@
         <p class="subscription-description subscription-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form method="post" action="https://echo.htmlacademy.ru/" class="subscription-form subscription-catalog">
             <label for="email" class="visually-hidden">Ваша почта:</label>
-            <input id="email" type="email" value="" placeholder="Ваш e-mail">
+            <input id="email" type="email" value="" placeholder="Ваш e-mail" required>
             <input type="submit" value="Подписаться">
         </form>
     </section>
@@ -240,24 +242,24 @@
         <h3 class="visually-hidden">Наши контакты</h3>
         <ul class="footer-socials-list">
             <li class="footer-socials-item">
-                <a href="https://twitter.com/htmlacademy_ru">
-                    <span class="visually-hidden">Twitter</span>
+                <a href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Vkontakte</span>
                 </a>
             </li>
             <li class="footer-socials-item">
-                <a href="https://www.facebook.com/htmlacademy">
-                    <span class="visually-hidden">Facebook</span>
+                <a href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Telegram</span>
                 </a>
             </li>
             <li class="footer-socials-item">
-                <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <a href="https://www.youtube.com/user/htmlacademyru">
                     <span class="visually-hidden">Youtube</span>
                 </a>
             </li>
         </ul>
         <a href="tel:+78128121212" class="footer-phone">+7(812)812-12-12</a>
         <a href="https://htmlacademy.ru/" class="footer-logo">
-            <img src="img/footer-logo.png" alt="логотип академии" width="115" height="33">
+            <img src="images/footer-logo.svg" alt="логотип академии." width="115" height="33">
         </a>
     </section>
 </footer>
