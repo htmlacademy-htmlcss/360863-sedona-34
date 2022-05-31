@@ -1,0 +1,268 @@
+/*элементам с классом visually-hidden стилизация не нужна?*/
+@font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+.main-index-banner {
+    background-image: url("/images/index-background.jpg"); /*почему не отображается банер фоном?*/
+    background-repeat: no-repeat;
+}
+
+.subscription {
+    background-image: url("../images/subscribe-background.jpg"); /*попробовал по другому путь указать, тоже не работает*/
+}
+
+.catalog-first-screen {
+    background-image: url("../images/catalog-filter-background.jpg");
+}
+
+.navigation a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.navigation-user a {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.section-advantages-description, .search-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.sub-advantages-list {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.sub-advantages-list>li:nth-child(2n+1) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+h3, h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-item:nth-child(2n+1) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2n) {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-blue h3 {
+    color: #FFFFFF;
+}
+
+.advantages-item.advantages-item-blue {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.search-button, .subscription-form>button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.search-button {
+    background-color: #756157;
+}
+
+.subscription-form button {
+    background-color: #82B3D3;
+}
+
+.subscription {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.subscription-title {
+    color: #FFFFFF;
+}
+
+.subscription-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-input-email{
+    color: red;
+} /* почему-то не выходит задать стиль тексту плейсхолжера*/
+
+.footer-phone {
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.breadcrumbs-item a {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #82B3D3;
+}
+
+.filter {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.filter h2 {
+    color: #FFFFFF;
+}
+
+.filter-fieldset-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.filter-button-submit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.filter-button-refresh {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.filter-price input {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.search-result-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.hotel-link, .hotel-add-favorites-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.hotel-link {
+    background-color: #756157;
+}
+
+.hotel-add-favorites-button {
+    background-color: #82B3D3;
+}
+
+.hotel-rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.hotel-pagination-item a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.hotel-pagination-item-active a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.subscription-catalog {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.subscription-catalog h2{
+    color: #000000;
+}
+
+.subscription-catalog p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.subscription-catalog input { /* как задать стиль тексту плейсхолдера?*/
+    color: red;
+    background-color: #F2F2F2;
+}
