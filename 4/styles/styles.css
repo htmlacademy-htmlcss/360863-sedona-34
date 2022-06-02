@@ -1,0 +1,327 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+.navigation-menu-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigation-user-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-index-banner {
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto; /*что-то не то с размером по вертикали*/
+    background-color: #333333;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.main-index h1 { /* так можно по критериям? */
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.main-index h2 {/
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-advantages-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.sub-advantages-list {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.sub-advantages-list>li:nth-child(2n+1) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.main-index h3, .main-index h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-item:nth-child(2n+1) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2n) {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-blue h3 {
+    color: #FFFFFF;
+}
+
+.advantages-item.advantages-item-blue {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.search {
+    text-align: center;
+}
+
+.search-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.search-button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.subscription-index {
+    text-align: center;
+}
+
+.subscription-index-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscription-index-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-index-input-email {
+    color: red;
+} /* как задать стиль тексту плейсхолдера? */
+
+.subscription-index-form-button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+}
+
+.subscription-index {
+    background-image: url("../images/subscribe-background.jpg");
+    background-size: 100% auto; /*что-то не то с размером по вертикали*/
+    background-repeat: no-repeat;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.footer-socials-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+.footer-phone {
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.breadcrumbs-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.filter h2 {
+    color: #FFFFFF;
+}
+
+.filter-fieldset-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.filter-button-submit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.filter-button-refresh {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.filter-price-input {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.catalog-first-screen {
+    background-image: url("../images/catalog-filter-background.jpg");
+    background-size: 100% auto; /*такой же вопрос про размер в высоту*/
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.search-result-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.hotel-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hotel-sort-select {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hotel-add-favorites-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-transform: uppercase;
+}
+
+.hotel-rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.hotel-pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+
+.hotel-pagination-link-active {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #F2F2F2;
+    text-decoration: none;
+}
+
+.hotel-cards-limit-select {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.subscription-catalog {
+    text-align: center;
+}
+
+.subscription-catalog-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.subscription-catalog-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-catalog-input-email {
+    color: red; /* как задать стиль тексту плейсхолжера? */
+    background-color: #F2F2F2;;
+}
+
+.subscription-catalog-form-button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+}
