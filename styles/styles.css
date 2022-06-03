@@ -44,7 +44,7 @@ body {
 
 .main-index-banner {
     background-image: url("../images/index-background.jpg");
-    background-size: 100% auto; /*что-то не то с размером по вертикали*/
+    background-size: 100% auto;
     background-color: #333333;
     background-repeat: no-repeat;
     text-align: center;
@@ -54,15 +54,14 @@ body {
     text-align: center;
 }
 
-.main-index h1 { /* так можно по критериям? */
+.main-index-heading, .main-catalog-heading {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
     background-color: #82B3D3;
 }
-
-.main-index h2 {/
+.advantages-heading, .search-heading, .search-result-heading, .search-result-description, .subscription-catalog-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -85,7 +84,7 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.main-index h3, .main-index h4 {
+.advantages-title, .sub-advantages-title {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
@@ -101,7 +100,7 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-blue h3 {
+.advantages-item-blue .advantages-title {
     color: #FFFFFF;
 }
 
@@ -133,7 +132,7 @@ body {
     text-align: center;
 }
 
-.subscription-index-title {
+.subscription-index-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -146,9 +145,9 @@ body {
     line-height: 26px;
 }
 
-.subscription-index-input-email {
-    color: red;
-} /* как задать стиль тексту плейсхолдера? */
+.subscription-index-input-email::placeholder, .subscription-catalog-input-email::placeholder {
+    color: #000000;;
+}
 
 .subscription-index-form-button {
     color: #FFFFFF;
@@ -161,7 +160,7 @@ body {
 
 .subscription-index {
     background-image: url("../images/subscribe-background.jpg");
-    background-size: 100% auto; /*что-то не то с размером по вертикали*/
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -186,7 +185,7 @@ body {
     text-decoration: none;
 }
 
-.filter h2 {
+.filter-heading {
     color: #FFFFFF;
 }
 
@@ -218,7 +217,7 @@ body {
 
 .catalog-first-screen {
     background-image: url("../images/catalog-filter-background.jpg");
-    background-size: 100% auto; /*такой же вопрос про размер в высоту*/
+    background-size: 100% auto;
     background-repeat: no-repeat;
     color: #FFFFFF;
     background-color: #82B3D3;
@@ -299,22 +298,13 @@ body {
     text-align: center;
 }
 
-.subscription-catalog-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
 .subscription-catalog-description {
     font-size: 22px;
     line-height: 26px;
 }
 
 .subscription-catalog-input-email {
-    color: red; /* как задать стиль тексту плейсхолжера? */
-    background-color: #F2F2F2;;
+    background-color: #F2F2F2;
 }
 
 .subscription-catalog-form-button {
