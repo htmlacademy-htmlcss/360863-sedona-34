@@ -15,6 +15,7 @@
 }
 
 body {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -54,14 +55,59 @@ body {
     text-align: center;
 }
 
-.main-index-heading, .main-catalog-heading {
+.main-index-heading {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
     background-color: #82B3D3;
 }
-.advantages-heading, .search-heading, .search-result-heading, .search-result-description, .subscription-catalog-heading {
+
+.main-catalog-heading {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.advantages-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-result-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-result-description {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscription-catalog-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -84,7 +130,15 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-title, .sub-advantages-title {
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sub-advantages-title {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
@@ -145,7 +199,11 @@ body {
     line-height: 26px;
 }
 
-.subscription-index-input-email::placeholder, .subscription-catalog-input-email::placeholder {
+.subscription-index-input-email::placeholder {
+    color: #000000;;
+}
+
+.subscription-catalog-input-email::placeholder {
     color: #000000;;
 }
 
