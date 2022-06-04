@@ -214,6 +214,7 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     background-color: #82B3D3;
+    cursor: pointer;
 }
 
 .subscription-index {
@@ -259,6 +260,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     background-color: #82B3D3;
+    cursor: pointer;
 }
 
 .filter-button-refresh {
@@ -266,6 +268,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .filter-price-input {
@@ -320,6 +323,11 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hotel-add-favorites-button.selected {
+    background-color: #7DB54F;
 }
 
 .hotel-rating {
@@ -372,4 +380,5 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     background-color: #82B3D3;
+    cursor: pointer;
 }
