@@ -63,11 +63,15 @@ body {
     display: flex;
 }
 
-.header-logo {
+.header-logo-link {
+    margin-bottom: -5px;
+    z-index: 1;
     display: block;
     margin-left: 70px;
+}
+
+.header-logo {
     vertical-align: bottom;
-    margin-bottom: -5px; /*как сделать так чтобы логотип заезжал сверху?*/
 }
 
 .navigation-menu {
