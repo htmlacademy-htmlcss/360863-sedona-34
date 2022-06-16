@@ -105,6 +105,8 @@ body {
     color: #000000;
     text-decoration: none;
     margin-right: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navigation-user-link {
