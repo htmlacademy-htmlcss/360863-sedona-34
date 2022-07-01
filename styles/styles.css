@@ -649,6 +649,7 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .breadcrumbs-main-icon {
@@ -764,6 +765,7 @@ body {
     min-height: 44px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    cursor: pointer
 }
 
 .hotel-view-link-active {
