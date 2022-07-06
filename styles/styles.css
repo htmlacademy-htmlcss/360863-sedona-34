@@ -1258,7 +1258,6 @@ input[type=number]::-webkit-inner-spin-button {
     margin: auto;
     padding: 62px 70px 70px 70px;
     background-color: #FFFFFF;
-
 }
 
 .modal-search {
@@ -1347,6 +1346,22 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.input-modal-description.input-modal-error {
+    grid-area: error;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 155px;
+}
+
+.input-modal-description.input-modal-success {
+    grid-area: success;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 155px;
+}
+
 .arrival-date-input::placeholder,
 .departure-date-input::placeholder,
 .adults-input::placeholder,
@@ -1391,20 +1406,55 @@ input[type=number]::-webkit-inner-spin-button {
 .adults-input {
     text-align: center;
     padding: 15px 40px 14px 40px;
+    width: 53px;
 }
 
 .input-adult-wrapper {
     grid-area: input-adult-wrapper;
+    position: relative;
 }
 
 .input-children-wrapper {
     grid-area: input-children-wrapper;
+    position: relative;
 }
 
 .children-input {
     text-align: center;
     padding: 15px 40px 14px 40px;
     grid-area: children-input;
+    width: 53px;
+}
+
+.button-minus, .button-plus {
+    border: none;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+}
+
+.button-minus {
+    top: calc(50% - 10px);
+    left: 19px;
+}
+
+.button-plus {
+    top: calc(50% - 10px);
+    right: 19px;
+}
+
+.button-minus-icon,
+.button-plus-icon {
+    fill: rgb(0, 0, 0, 0.3);
+    height: 20px;
+}
+
+.button-minus-icon:hover,
+.button-plus-icon:hover {
+    fill: rgb(0, 0, 0, 1);
 }
 
 .modal-search-form-button {
@@ -1419,6 +1469,7 @@ input[type=number]::-webkit-inner-spin-button {
     text-align: center;
     padding: 12px 26px;
     grid-area: modal-search-form-button;
+    margin-top: 40px;
 }
 
 .modal-search-form {
@@ -1426,10 +1477,12 @@ input[type=number]::-webkit-inner-spin-button {
     grid-template-columns: 155px 133px 154px 133px;
     grid-template-areas:
     "arrival-date-label arrival-date-input arrival-date-input arrival-date-input"
+    "error error error error"
     "departure-date-label departure-date-input departure-date-input departure-date-input"
+    "success success success success"
     "adults-label input-adult-wrapper children-label input-children-wrapper"
     "modal-search-form-button modal-search-form-button modal-search-form-button modal-search-form-button";
-    row-gap: 40px;
+    /*row-gap: 40px;*/
 }
 
 .tooltip-toggle {
@@ -1488,19 +1541,3 @@ input[type=number]::-webkit-inner-spin-button {
     margin-left: auto;
     margin-right: auto;
 }
-/*.minus-button {
-    border: none;
-    padding: 0;
-    position: absolute;
-}
-
-.plus-button {
-    border: none;
-    padding: 0;
-    position: absolute;
-    right: 0;
-}
-
-.input-modal-wrapper {
-    position: relative;
-}*/
