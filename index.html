@@ -182,14 +182,42 @@
                         <input type="text" id="modal-departure-date" name="departure-date" value="" placeholder="1 сентября 2021" class="departure-date-input">
                         <!--<p class="input-modal-success">На эти даты есть свободные номера. Пока есть.</p>-->
                         <label for="modal-adults" class="adults-label">Взрослые:</label>
-                        <input type="number" id="modal-adults" name="adults" value="" placeholder="2" class="adults-input">
+                        <div class="input-adult-wrapper">
+                            <button class="button-minus" type="button">
+                                <svg aria-hidden="true" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+                                </svg>
+                                <span class="visually-hidden">Уменьшить</span>
+                            </button>
+                            <input type="number" id="modal-adults" name="adults" value="" placeholder="2" class="adults-input">
+                            <button class="button-minus" type="button">
+                                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity=".3" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                                </svg>
+                                <span class="visually-hidden">Увеличить</span>
+                            </button>
+                        </div>
                         <label for="modal-children" class="children-label">Дети:&nbsp;
                             <span class="tooltip">
                                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">i</button>
                                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                             </span>
                         </label>
-                        <input type="number" id="modal-children" name="children" value="" placeholder="1" class="children-input">
+                        <div class="input-children-wrapper">
+                            <button class="button-minus" type="button">
+                                <svg aria-hidden="true" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+                                </svg>
+                                <span class="visually-hidden">Уменьшить</span>
+                            </button>
+                            <input type="number" id="modal-children" name="children" value="" placeholder="1" class="children-input">
+                            <button class="button-minus" type="button">
+                                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity=".3" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                                </svg>
+                                <span class="visually-hidden">Увеличить</span>
+                            </button>
+                        </div>
                     <button class="button-second modal-search-form-button" type="submit">Найти</button>
                 </form>
                 

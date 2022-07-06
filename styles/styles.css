@@ -1391,7 +1391,14 @@ input[type=number]::-webkit-inner-spin-button {
 .adults-input {
     text-align: center;
     padding: 15px 40px 14px 40px;
-    grid-area: adults-input;
+}
+
+.input-adult-wrapper {
+    grid-area: input-adult-wrapper;
+}
+
+.input-children-wrapper {
+    grid-area: input-children-wrapper;
 }
 
 .children-input {
@@ -1420,7 +1427,7 @@ input[type=number]::-webkit-inner-spin-button {
     grid-template-areas:
     "arrival-date-label arrival-date-input arrival-date-input arrival-date-input"
     "departure-date-label departure-date-input departure-date-input departure-date-input"
-    "adults-label adults-input children-label children-input"
+    "adults-label input-adult-wrapper children-label input-children-wrapper"
     "modal-search-form-button modal-search-form-button modal-search-form-button modal-search-form-button";
     row-gap: 40px;
 }
