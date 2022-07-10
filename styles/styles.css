@@ -824,6 +824,11 @@ img {
   background-position: center;
 }
 
+.control-input[type="checkbox"]:focus + .control-checkbox,
+.control-input[type="radio"]:focus + .control-radio {
+  background-color: #756157;
+}
+
 .control-radio {
   position: absolute;
   top: 1px;
