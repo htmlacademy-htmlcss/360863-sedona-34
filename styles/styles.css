@@ -33,6 +33,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -328,7 +333,7 @@ body {
 }
 
 .sub-advantages-title {
-  margin: 0;
+  margin: 2px;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -367,7 +372,7 @@ body {
   background-image: url("../images/souvenirs.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 75px 72px;
+  background-size: 64px 76px;
 }
 
 .sub-advantages-description {
@@ -381,7 +386,7 @@ body {
 }
 
 .sub-advantages-item {
-  padding: 80px 85px 81px 85px;
+  padding: 80px 85px 78px 85px;
   width: 400px;
   list-style-type: none;
 }
@@ -507,6 +512,7 @@ body {
   padding: 0 22px;
   width: 556px;
   min-height: 60px;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -764,7 +770,7 @@ body {
 
 .filter-fieldset-list {
   padding: 0;
-  margin: 30px 0 0 0;
+  margin: 28px 0 0 0;
   list-style-type: none;
 }
 
@@ -782,9 +788,13 @@ body {
   padding-bottom: 0;
 }
 
-.filter-fieldset.infrastructure,
+.filter-fieldset.infrastructure {
+  max-width: 200px;
+}
+
 .filter-fieldset.type {
   max-width: 200px;
+  margin-left: 2px;
 }
 
 .filter-fieldset.cost {
@@ -835,7 +845,7 @@ body {
 
 .filter-price {
   display: flex;
-  margin: 34px 0 0 0;
+  margin: 35px 0 0 0;
   flex-wrap: wrap;
   width: 288px;
 }
@@ -865,12 +875,12 @@ body {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .price-wrapper {
@@ -893,7 +903,7 @@ input[type="number"] {
 
 .range {
   position: relative;
-  margin-top: 27px;
+  margin-top: 28px;
   height: 4px;
   width: 100%;
   background-color: rgb(255, 255, 255, 0.3);
@@ -1041,7 +1051,7 @@ input[type="number"] {
 
 .search-result-sorting {
   display: flex;
-  margin-top: 50px;
+  margin-top: 53px;
   margin-left: 72px;
   align-items: center;
 }
@@ -1075,7 +1085,7 @@ input[type="number"] {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 56px 71px 0 73px;
+  margin: 54px 71px 0 73px;
   justify-content: flex-start;
   list-style-type: none;
 }
