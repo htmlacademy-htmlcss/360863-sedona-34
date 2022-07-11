@@ -827,7 +827,7 @@ img {
 .control-input[type="checkbox"]:focus + .control-checkbox,
 .control-input[type="radio"]:focus + .control-radio {
   background-color: rgba(255, 255, 255, 0.6);
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-radio {
@@ -884,8 +884,8 @@ img {
 
 .filter-price-input:focus {
   box-shadow:
-  0 0 0 3px #81B3D2 inset,
-  0 0 0 3px #81B3D2;
+    0 0 0 3px #81b3d2 inset,
+    0 0 0 3px #81b3d2;
 }
 
 .filter-price-input:hover {
@@ -1012,7 +1012,7 @@ input[type="number"] {
 }
 
 .filter-button-refresh:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
@@ -1572,22 +1572,22 @@ input[type="number"] {
 
 .arrival-date-input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .departure-date-input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .adults-input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .children-input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .arrival-date-input:active {
@@ -1688,6 +1688,7 @@ input[type="number"] {
 .button-plus-icon {
   fill: rgb(0, 0, 0, 0.3);
 }
+
 .button-minus:focus > .button-minus-icon,
 .button-plus:focus > .button-plus-icon {
   fill: #000000;
@@ -1695,7 +1696,7 @@ input[type="number"] {
 
 .button-minus:focus,
 .button-plus:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   border-radius: 4px;
   padding: 0;
 }
@@ -1706,7 +1707,7 @@ input[type="number"] {
 }
 
 .button-minus:active > .button-minus-icon,
-.button-plus:active> .button-plus-icon {
+.button-plus:active > .button-plus-icon {
   fill: rgb(0, 0, 0, 0.3);
 }
 
