@@ -650,7 +650,7 @@ img {
 }
 
 .catalog-first-screen {
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 64px 70px;
   color: #ffffff;
   background-image: url("../images/catalog-filter-background.jpg");
   background-size: 100% auto;
@@ -826,7 +826,8 @@ img {
 
 .control-input[type="checkbox"]:focus + .control-checkbox,
 .control-input[type="radio"]:focus + .control-radio {
-  background-color: #756157;
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
 }
 
 .control-radio {
@@ -841,11 +842,19 @@ img {
 }
 
 .filter-fieldset-item:hover .control-checkbox {
-  background-color: #756157;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .filter-fieldset-item:hover .control-radio {
-  background-color: #756157;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-fieldset-item:active .control-checkbox {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-fieldset-item:active .control-radio {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-price {
@@ -871,6 +880,20 @@ img {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
+}
+
+.filter-price-input:focus {
+  box-shadow:
+  0 0 0 3px #81B3D2 inset,
+  0 0 0 3px #81B3D2;
+}
+
+.filter-price-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-price-input:active {
+  background-color: #756257;
 }
 
 .filter-price-input-max {
@@ -930,13 +953,18 @@ input[type="number"] {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background-color: #756157;
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:active,
-.range-toggle:focus {
-  outline: 3px solid #756157;
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -970,15 +998,30 @@ input[type="number"] {
 
 .filter-button-refresh {
   display: block;
-  margin: 20px 0 0 0;
-  padding: 0;
+  margin: 15px 0 0 0;
+  padding: 6px 0 6px 0;
   width: 160px;
+  min-height: 32px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
+}
+
+.filter-button-refresh:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter-button-refresh:hover {
+  opacity: 0.6;
+}
+
+.filter-button-refresh:active {
+  opacity: 0.3;
 }
 
 .hotel-view-list {
@@ -1079,11 +1122,38 @@ input[type="number"] {
   background-position-y: 50%;
 }
 
-.hotel-sort-select:hover,
-.hotel-sort-select:focus,
-.hotel-cards-limit-select:hover,
+.hotel-sort-select:hover {
+  border-color: #68a2ca;
+}
+
+.hotel-sort-select:focus {
+  border-color: #68a2ca;
+}
+
+.hotel-sort-select:active {
+  border-color: #3f5e72;
+}
+
+.hotel-sort-select:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-cards-limit-select:hover {
+  border-color: #68a2ca;
+}
+
 .hotel-cards-limit-select:focus {
-  border-color: #756157;
+  border-color: #68a2ca;
+}
+
+.hotel-cards-limit-select:active {
+  border-color: #3f5e72;
+}
+
+.hotel-cards-limit-select:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-list {
@@ -1361,10 +1431,28 @@ input[type="number"] {
   height: 53px;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/icons/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active > .modal-close-button-icon {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .modal-title {
@@ -1476,9 +1564,61 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  opacity: 0.6;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
+}
+
+.arrival-date-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.departure-date-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.adults-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.children-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.arrival-date-input:active {
+  opacity: 1;
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.departure-date-input:active {
+  opacity: 1;
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.adults-input:active {
+  opacity: 1;
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.children-input:active {
+  opacity: 1;
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.arrival-date-input:hover,
+.departure-date-input:hover,
+.adults-input:hover,
+.children-input:hover {
+  background-color: #e6e6e6;
 }
 
 .arrival-date-input {
@@ -1523,11 +1663,14 @@ input[type="number"] {
 .button-minus,
 .button-plus {
   position: absolute;
+  z-index: 1;
   display: flex;
-  height: 20px;
   align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: rgb(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -1543,13 +1686,28 @@ input[type="number"] {
 
 .button-minus-icon,
 .button-plus-icon {
-  height: 20px;
   fill: rgb(0, 0, 0, 0.3);
 }
+.button-minus:focus > .button-minus-icon,
+.button-plus:focus > .button-plus-icon {
+  fill: #000000;
+}
 
-.button-minus-icon:hover,
-.button-plus-icon:hover {
+.button-minus:focus,
+.button-plus:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.button-minus:hover > .button-minus-icon,
+.button-plus:hover > .button-plus-icon {
   fill: rgb(0, 0, 0, 1);
+}
+
+.button-minus:active > .button-minus-icon,
+.button-plus:active> .button-plus-icon {
+  fill: rgb(0, 0, 0, 0.3);
 }
 
 .modal-search-form-button {
@@ -1566,6 +1724,10 @@ input[type="number"] {
   background-color: #83b3d3;
   border: none;
   border-radius: 10px;
+}
+
+.modal-search-form-button:focus {
+  outline: 3px solid #756257;
 }
 
 .modal-search-form {
@@ -1593,7 +1755,7 @@ input[type="number"] {
 }
 
 .tooltip-toggle:hover {
-  background-color: #b1c5d2;
+  background-color: #68a2ca;
 }
 
 .tooltip {
