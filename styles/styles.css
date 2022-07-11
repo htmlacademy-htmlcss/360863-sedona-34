@@ -477,7 +477,7 @@ img {
   padding-bottom: 94px;
   text-align: center;
   background-image: url("../images/subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #82b3d3;
   color: #ffffff;
@@ -653,7 +653,7 @@ img {
   padding: 35px 70px 64px 70px;
   color: #ffffff;
   background-image: url("../images/catalog-filter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #82b3d3;
 }
